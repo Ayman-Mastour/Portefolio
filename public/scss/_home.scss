@@ -1,0 +1,207 @@
+#presentation {
+    text-align: center;
+    font-size: 25px;
+    padding: 15em;
+    background-image: url("/img/background.jpg");
+}
+
+#presentation h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#presentation a {
+    @extend %btn;
+}
+
+.container-about-me{
+    background-color: #fafafa;
+}
+
+#intro-skills,
+#intro-projet,
+#intro-contact {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 7em;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+#intro-skills h1,
+#intro-projet h1,
+#intro-contact h1 {
+    display: block;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    position: relative;
+    color: #111;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15rem;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+    width: 90em;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+#container a{
+    @extend %btn;
+    max-width: 13%;
+    margin-left: 20px;
+}
+
+.title-about{
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.about-me p{
+    font-size: 1.1rem;
+}
+.about-me {
+    padding: 0px;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0rem 15rem ;
+}
+
+.skills_skill{
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+}
+
+#projet{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 2rem; 
+    margin-bottom: 14rem;
+   
+}
+
+.projet-info a{
+    @extend %btn;
+    min-width: 40%;
+}
+
+.projet-info h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.projet-info p{
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.projet-info {
+    padding: 20px; 
+    margin-right: 55%;
+}
+
+.img-projet{
+    width: 75%;
+    margin-left: 30%;
+}
+
+.container-contact{
+    background-image: url("/img/background.jpg");
+    padding-bottom: 5rem;
+}
+
+#contact{
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 3rem;
+    max-width: 80rem;
+    width: 40%;
+    border-radius: 5px;
+    margin: 2rem auto 0 auto;
+}
+
+#contact label{
+    color: #666;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    margin: 1rem;
+    display: block;
+}
+
+#contact textarea{
+    resize: none;
+    color: #333;
+    padding: 1rem;
+    width: 94%;
+    border: 1px solid #ebebeb;
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom:1rem ;
+}
+
+#contact input{
+    color: #333;
+    padding: 1.5rem;
+    width: 90%;
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom:1rem ;
+    
+}
+
+#contact button{
+    @extend %btn;
+    cursor: pointer;
+}
+
+// @media screen and (max-width: 1200px) {
+//     #container {
+//         grid-template-columns: 1fr;
+//         grid-gap: 2rem;
+//         padding-top: 3rem;
+//         padding-bottom: 8rem;
+//         width: 80%;
+//     }
+
+//     #container a {
+//         max-width: 100%;
+//         margin-left: 0;
+//     }
+
+//     .img-projet {
+//         width: 100%;
+//         margin-left: 0;
+//     }
+// }
+

@@ -1,0 +1,83 @@
+#presentation-projet {
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 9em;
+}
+
+#presentation-projet h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+#presentation-projet p {
+    margin: auto;
+    width: 70%;
+    
+}
+
+#presentation-projet a {
+    @extend %btn;
+}
+
+
+
+#projet-details {
+    max-width: 120rem;
+    margin: auto;
+    width: 50%;
+
+}
+
+.main-container_projet {
+    padding: 3rem 0;
+    margin: auto;
+}
+
+.img_projet_link {
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+#main-content {
+    width: 50%;
+    font-size: 1.2rem;
+
+}
+
+.skill {
+    display: flex;
+}
+
+.skill_skill {
+    text-align: center;
+    padding: 1rem 0.3rem;
+    width: 10%;
+    margin-bottom: 2.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+}
+
+.title-projet_link {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.btn_projet_link a {
+    @extend %btn;
+    margin: 10px;
+    padding: 1rem 2rem;
+    border: 3px solid #666;
+}
+
+.arrow-down {
+    margin-top: 5rem;
+}

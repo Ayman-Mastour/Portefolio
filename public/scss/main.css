@@ -1,0 +1,376 @@
+#presentation {
+  text-align: center;
+  font-size: 25px;
+  padding: 15em;
+  background-image: url("/img/background.jpg");
+}
+
+#presentation h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.container-about-me {
+  background-color: #fafafa;
+}
+
+#intro-skills,
+#intro-projet,
+#intro-contact {
+  text-align: center;
+  font-weight: 700;
+  padding-top: 7em;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+#intro-skills h1,
+#intro-projet h1,
+#intro-contact h1 {
+  display: block;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #111;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15rem;
+  padding-top: 3rem;
+  padding-bottom: 15rem;
+  width: 90em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#container a {
+  max-width: 13%;
+  margin-left: 20px;
+}
+
+.title-about {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+}
+
+.about-me {
+  padding: 0px;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 0rem 15rem;
+}
+
+.skills_skill {
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+}
+
+#projet {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 2rem;
+  margin-bottom: 14rem;
+}
+
+.projet-info a {
+  min-width: 40%;
+}
+
+.projet-info h3 {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.projet-info p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.projet-info {
+  padding: 20px;
+  margin-right: 55%;
+}
+
+.img-projet {
+  width: 75%;
+  margin-left: 30%;
+}
+
+.container-contact {
+  background-image: url("/img/background.jpg");
+  padding-bottom: 5rem;
+}
+
+#contact {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  padding: 3rem;
+  max-width: 80rem;
+  width: 40%;
+  border-radius: 5px;
+  margin: 2rem auto 0 auto;
+}
+
+#contact label {
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin: 1rem;
+  display: block;
+}
+
+#contact textarea {
+  resize: none;
+  color: #333;
+  padding: 1rem;
+  width: 94%;
+  border: 1px solid #ebebeb;
+  font-size: 1.1rem;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#contact input {
+  color: #333;
+  padding: 1.5rem;
+  width: 90%;
+  border: 1px solid #ebebeb;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#contact button {
+  cursor: pointer;
+}
+
+.main-footer {
+  background-color: black;
+  color: white;
+}
+
+.main-footer_low {
+  max-width: 120rem;
+  margin: auto;
+  width: 70%;
+}
+
+.main-footer_upper {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.main-footer_lower {
+  border-top: 1px solid #444;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 4rem 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.header {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.head-upper {
+  display: flex;
+  align-items: center;
+}
+
+.head-upper img {
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.head-lower {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.head-lower a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-left: 2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.head-lower a:hover {
+  color: rgb(152, 251, 152);
+}
+
+.btn_projet_link a, #presentation-projet a, #presentation a, #container a, .projet-info a, #contact button {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(152, 251, 152);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  padding: 0.9rem 6rem;
+  border: none;
+}
+
+#presentation-projet {
+  background-color: rgb(238, 238, 238);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 9em;
+}
+
+#presentation-projet h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+#presentation-projet p {
+  margin: auto;
+  width: 70%;
+}
+
+#projet-details {
+  max-width: 120rem;
+  margin: auto;
+  width: 50%;
+}
+
+.main-container_projet {
+  padding: 3rem 0;
+  margin: auto;
+}
+
+.img_projet_link {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#main-content {
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.skill {
+  display: flex;
+}
+
+.skill_skill {
+  text-align: center;
+  padding: 1rem 0.3rem;
+  width: 10%;
+  margin-bottom: 2.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+}
+
+.title-projet_link {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.btn_projet_link a {
+  margin: 10px;
+  padding: 1rem 2rem;
+  border: 3px solid #666;
+}
+
+.arrow-down {
+  margin-top: 5rem;
+}
+
+.container-send {
+  background-color: rgb(152, 251, 152);
+  text-align: center;
+  width: 15%;
+  margin: auto;
+  margin-top: 15%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title-send h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.link-send a {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+<%- include ('header') -%>
+
+<main>
+    <section id="presentation">
+        <h1>Bonjour, Je suis Ayman Mastour</h1>
+        <p>Jeune débutant passionné par l'informatique, toujours avide d'apprendre et d'élargir mes connaissances.</p>
+        <a href="#intro-projet">Projet</a>
+    </section>
+    <div class="container-about-me">
+        <section id="intro-skills">
+            <h1>à propos de moi</h1>
+            <p>Ici vous trouverez plus d'informations sur moi, ce que je fais et mes compétences actuelles
+                principalement en
+                termes de programmation et de technologie.</p>
+        </section>
+
+        <div id="container">
+            <div>
+                <h3 class="title-about">Apprendre à me connaître</h3>
+            </div>
+            <div>
+                <h3 class="title-about">Mes Compétences</h3>
+            </div>
+            <article class="about-me">
+                <p>Je suis un<strong> jeune débutant dans le developpement Web Full Stack</strong> , Découvrez mon projet AutoExpress dans la section <strong>projet</strong>  qui peut évoluer entre-temps, En dehors du code, l'univers des <strong>jeux vidéo</strong> m'intrigue profondément.</p>
+                <p>J'apprécie non seulement jouer à une variété de jeux, mais je trouve également fascinante la conception qui se cache derrière eux. Comprendre comment les développeurs créent des expériences interactives uniques m'inspire et influence ma propre approche du développement web.</p>
+                <p> Mon objectif est de devenir un développeur compétent et créatif, et <strong>je suis toujours ouvert à de nouvelles opportunités d'apprentissage</strong>, <strong>n'hésitez pas a me contacter</strong>.</p>
+            </article>
+
+            <article class="skills">
+                <div class="skills_skill">HTML</div>
+                <div class="skills_skill">CSS</div>
+                <div class="skills_skill">SCSS</div>
+                <div class="skills_skill">React</div>
+                <div class="skills_skill">Node</div>
+                <div class="skills_skill">JavaScript</div>
+                <div class="skills_skill">Github</div>
+                <div class="skills_skill">SQL Server</div>
+            </article>
+            <a href="#intro-contact">Contact</a>
+        </div>
+    </div>
+    <section id="intro-projet">
+        <h1>Projet</h1>
+        <p>Vous trouverez ici quelques-uns des projets personnels que j'ai créés.</p>
+    </section>
+
+    <section id="projet">
+        <img class="img-projet" src="/img/Design.png" alt="Présentation d'un projet de location de voiture">
+        <div class="projet-info">
+            <h3>AutoExpress</h3>
+            <p>AutoExpress est une entreprise fictif de location de véhicule, j'ai crée le site en gérant à la fois le
+                Back-end et le Front-end.</p>
+            <a href="/projet-1">En savoir plus</a>
+        </div>
+    </section>
+    <div class="container-contact">
+
+        <section id="intro-contact">
+            <h1>Contact</h1>
+            <p>N'hésitez pas à me contacter en soumettant le formulaire ci-dessous et je vous répondrai dans les plus
+                brefs
+                délais.</p>
+        </section>
+
+        <section id="contact">
+            <form action="http://localhost:7016/send" method="post">
+                <label for="name">Nom</label>
+                <input required type="text" name="name" id="name" placeholder="Entrez Votre Nom">
+
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="email" placeholder="Entrez Votre Email">
+
+                <label for="message">Message</label>
+                <textarea required name="message" id="message" cols="40" rows="10"
+                    placeholder="Entrez Votre Message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </div>
+</main>
+
+<%- include ('footer') -%>
