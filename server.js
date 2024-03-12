@@ -51,7 +51,7 @@ app.post('/send', (req, res) => {
             return console.log(error);
         }
         console.log('Email envoyé:' + info.response);
-        res.redirect('/send')
+        res.redirect('./')
     })
 })
 
