@@ -26,7 +26,7 @@ app.use("/", router);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-router.post('/', (req, res) => {
+router.post('/send', (req, res) => {
     const { name, email, message} = req.body;
 
     const transporter = nodemailer.createTransport({
@@ -49,7 +49,7 @@ router.post('/', (req, res) => {
             return console.log(error);
         }
         console.log('Email envoyé:' + info.response);
-        res.redirect('/')
+        res.redirect('/send')
     })
 })
 
