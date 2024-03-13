@@ -1,6 +1,12 @@
 <%- include ('header') -%>
 
 <main>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <p>Site en cours de développement ...</p>
+        </div>
+    </div>
     <section id="presentation">
         <h1>Bonjour, Je suis Ayman Mastour</h1>
         <p>Jeune débutant passionné par l'informatique, toujours avide d'apprendre et d'élargir mes connaissances.</p>
@@ -64,7 +70,7 @@
         </section>
 
         <section id="contact">
-            <form action="http://localhost:7016/send" method="post">
+            <form action="/send" method="post">
                 <label for="name">Nom</label>
                 <input required type="text" name="name" id="name" placeholder="Entrez Votre Nom">
 
