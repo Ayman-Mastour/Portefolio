@@ -1,20 +1,31 @@
 #presentation {
     text-align: center;
     font-size: 25px;
-    padding: 15em;
-    background-image: url("/img/background.jpg");
-}
+    background-image: url("/img/background.jpg"); 
+    position: relative;
+    padding-top: 20rem;
+    padding-bottom: 25rem;
+}   
 
 #presentation h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#presentation p{
+    line-height: 1.6;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #333
 }
 
 #presentation a {
     @extend %btn;
 }
 
-.container-about-me{
+.container-about-me {
     background-color: #fafafa;
 }
 
@@ -22,7 +33,7 @@
 #intro-projet,
 #intro-contact {
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     padding-top: 7em;
     font-size: 1.1rem;
     color: #666;
@@ -40,35 +51,36 @@
     color: #111;
 }
 
-#container{
+#container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15rem;
     padding-top: 3rem;
     padding-bottom: 15rem;
-    width: 90em;
-    margin-right:auto;
-    margin-left: auto;
+    width: 90%;
+    max-width: 120rem;
+    // margin-right: auto;
+    // margin-left: auto;
+    margin: auto
 }
 
-#container a{
+#container a {
     @extend %btn;
-    max-width: 13%;
-    margin-left: 20px;
+    width: 20%;
 }
 
-.title-about{
+.title-about {
     margin-left: 20px;
     font-weight: 700;
     font-size: 1.7rem;
     letter-spacing: 1px;
 }
 
-.about-me p{
+.about-me p {
     font-size: 1.1rem;
 }
+
 .about-me {
-    padding: 0px;
     color: #666;
     max-width: 60rem;
     line-height: 1.7;
@@ -78,10 +90,10 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
-    margin: auto 0rem 15rem ;
+    margin: auto 0rem 10rem;
 }
 
-.skills_skill{
+.skills_skill {
     padding: 1rem 1rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -92,58 +104,57 @@
     color: #666;
 }
 
-#projet{
+#projet {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
-    padding: 2rem; 
+    padding: 2rem;
     margin-bottom: 14rem;
-   
 }
 
-.projet-info a{
+.projet-info a {
     @extend %btn;
     min-width: 40%;
 }
 
-.projet-info h3{
+.projet-info h3 {
     font-weight: 700;
     font-size: 1.9rem;
 }
 
-.projet-info p{
+.projet-info p {
     color: #666;
     font-size: 1.1rem;
     margin-bottom: 3rem;
 }
 
 .projet-info {
-    padding: 20px; 
-    margin-right: 55%;
+    padding: 20px;
+    margin-right: 40%;
 }
 
-.img-projet{
+.img-projet {
     width: 75%;
     margin-left: 30%;
 }
 
-.container-contact{
+.container-contact {
     background-image: url("/img/background.jpg");
     padding-bottom: 5rem;
 }
 
-#contact{
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+#contact {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: white;
     padding: 3rem;
-    max-width: 80rem;
-    width: 40%;
+    max-width: 60rem;
+    width: 45%;
     border-radius: 5px;
     margin: 2rem auto 0 auto;
 }
 
-#contact label{
+#contact label {
     color: #666;
     font-size: 1rem;
     letter-spacing: 0px;
@@ -152,21 +163,21 @@
     display: block;
 }
 
-#contact textarea{
+#contact textarea {
     resize: none;
     color: #333;
     padding: 1rem;
-    width: 94%;
+    width: 92%;
     border: 1px solid #ebebeb;
     font-size: 1.1rem;
     letter-spacing: 0px;
     background: #f0f0f0;
     border-radius: 5px;
     font-weight: 600;
-    margin-bottom:1rem ;
+    margin-bottom: 1rem;
 }
 
-#contact input{
+#contact input {
     color: #333;
     padding: 1.5rem;
     width: 90%;
@@ -176,32 +187,109 @@
     background: #f0f0f0;
     border-radius: 5px;
     font-weight: 600;
-    margin-bottom:1rem ;
-    
+    margin-bottom: 1rem;
+
 }
 
-#contact button{
+#contact button {
     @extend %btn;
     cursor: pointer;
 }
 
-// @media screen and (max-width: 1200px) {
-//     #container {
-//         grid-template-columns: 1fr;
-//         grid-gap: 2rem;
-//         padding-top: 3rem;
-//         padding-bottom: 8rem;
-//         width: 80%;
-//     }
+@media only screen and (max-width: 1440px) {
+    #container{
+        grid-column-gap: 5rem;
+        max-width: 120rem;
+        width: 90%;
+    }
 
-//     #container a {
-//         max-width: 100%;
-//         margin-left: 0;
-//     }
+    .skills{
+        margin: auto ;
+    }
 
-//     .img-projet {
-//         width: 100%;
-//         margin-left: 0;
-//     }
-// }
+    .projet-info{
+        margin: 0;
+        width: 70%;
+    }
 
+    .img-projet{
+        width: 90%;
+        margin-left: 20%;
+    }
+
+    #contact{
+        width: 55%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #presentation{
+        padding-top: 20rem;
+        padding-bottom: 15rem;
+    }
+    #presentation h1{
+        font-size: 2.8rem;
+    }
+
+    #presentation p{
+    font-size: 1.1rem;
+    }
+
+    #container{
+        grid-column-gap: 5rem;
+    }
+
+    .about-me p{
+        font-size: 1rem;
+    }
+
+    .img-projet{
+        width: 100%;
+        margin: 0;
+    }
+
+    #projet{
+        grid-gap: 5rem;
+    }
+
+    .projet-info{
+        margin: 0;
+    }
+    
+    #container a{
+        width: 20%;
+    }
+
+    #contact{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    #container {
+        grid-template-columns: 1fr;
+        padding-bottom: 8rem;
+       
+    }
+
+    #projet{
+        grid-template-columns: 1fr;
+    }
+
+    #contact{
+        width: 80%;
+    }
+
+    #projet{
+        margin-bottom: 5rem;
+    }
+
+    .projet-info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

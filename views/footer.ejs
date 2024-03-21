@@ -20,15 +20,27 @@
         const popup = document.getElementById("popup");
         const closeBtn = document.getElementById("close");
 
+        // Vérifie si l'utilisateur a déjà effectué un choix
+        const userChoice = localStorage.getItem("userChoice");
+        if (userChoice === "accepted") {
+            popup.style.display = "none"; // Cache la popup si l'utilisateur a déjà accepté
+        }
+
         closeBtn.addEventListener('click', function () {
-            popup.style.display = "none"
+            popup.style.display = "none";
+            // Enregistre le choix de l'utilisateur dans le stockage local
+            localStorage.setItem("userChoice", "accepted");
         });
 
         setTimeout(function () {
-            popup.style.display = "block";
+            // Affiche la popup après un délai si l'utilisateur n'a pas encore effectué de choix
+            if (!userChoice) {
+                popup.style.display = "block";
+            }
         });
     })
 </script>
+
 </body>
 
 </html>
