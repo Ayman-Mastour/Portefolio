@@ -17,8 +17,6 @@ body {
 
 
 .header {
-    background-color: white;
-    overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -28,7 +26,7 @@ body {
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 5rem;
+
 }
 
 .head-upper{
@@ -58,3 +56,4 @@ body {
 .head-lower a:hover{
     color: rgb(152,251,152);;
 }
+

@@ -18,3 +18,25 @@
     color: black;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 1024px){
+    .container-send{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container-send{
+        width: 40%;
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    .container-send{
+        width: 60%;
+        margin-top: 50%;
+    }
+
+}
