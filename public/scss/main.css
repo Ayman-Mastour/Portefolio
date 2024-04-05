@@ -269,6 +269,10 @@
   }
 }
 @media only screen and (max-width: 425px) {
+  #presentation {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
   #intro-contact a {
     padding: 0;
   }
@@ -559,29 +563,6 @@ body {
     margin-top: 50%;
   }
 }
-.popup {
-  position: fixed;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(255, 0, 0);
-  padding: 8px;
-  border-radius: 5px;
-  z-index: 1001;
-}
-
-.popup-content {
-  background-color: #ffffff;
-  padding: 10px;
-}
-
-.close {
-  position: absolute;
-  top: 0.3rem;
-  right: 0.7rem;
-  cursor: pointer;
-}
-
 nav {
   top: 0;
   right: 0;
