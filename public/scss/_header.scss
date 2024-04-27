@@ -32,6 +32,8 @@ body {
 .head-upper{
     display: flex;
     align-items: center;
+    margin-left: 20px;
+    text-decoration: underline rgb(152,251,152);
 }
 
 .head-lower {
@@ -54,6 +56,6 @@ body {
 }
 
 .head-lower a:hover{
-    color: rgb(152,251,152);;
+    color: rgb(152,251,152);
 }
 
